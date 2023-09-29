@@ -1,0 +1,43 @@
+package chapter4;
+import java.util.Scanner;
+public class java243 {
+	private double x,y;
+	private int r;
+		public java243(double x, double y, int r) {
+		this.x = x;
+		this.y = y;
+		this.r = r;
+	}
+		public void show() {
+			System.out.print(x+", "+y+", "+r );
+		}
+
+		public int getR() {
+			return r;
+		}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in );
+			java243 c[]= new java243[3];
+			for(int i=0;i<c.length;i++ ) {
+				System.out.print("nhap gia tri : ");
+				double x=sc.nextDouble();
+				double y=sc.nextDouble();
+				int r = sc.nextInt();
+				c[i]= new java243( x, y, r);
+			}
+//		System.out.print("nhap gia tri : "+c[1].getR());
+			for(int i=0;i<1;i++ ) {
+				for(int j=i+1;j<c.length;j++ )
+					if(c[i ].getR()>c[j ].getR()&& c[i ].getR()>c[j+1 ].getR())
+						c[i].show();
+					else if(c[i ].getR()< c[j ].getR()&& c[j ].getR()>c[j+1 ].getR())
+					c[j].show();
+					else 
+						c[c.length-1].show();
+			}
+		}
+		
+
+	}
+
+

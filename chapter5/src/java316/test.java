@@ -1,0 +1,40 @@
+package java316;
+
+public class test {
+
+	public static void main(String[] args) {
+		//5 
+//		ColorPoint cp = new ColorPoint(5,5,"yellow ");
+//		cp.setXY(10 , 20);
+//		cp.setCl("Red");
+//		String str = cp.toString();
+//		System.out.println(str);
+		// 6 
+//		ColorPoint zp = new ColorPoint("black");
+//		System.out.println(zp.toString());
+//		
+//		ColorPoint cp = new ColorPoint(10,10);
+//		cp.setXY(5 , 5);
+//		cp.setCl("Red");
+//		System.out.println(cp.toString());
+		//7 
+//		Point3D p = new Point3D(1,2,3 );
+//		System.out.println(p.toString());
+//		p.moveUp();
+//		System.out.println(p.toString());
+//		p.moveDown();
+//		p.move(10,10);
+//		System.out.println(p.toString());
+//		p.move(100 , 200, 300);
+//		System.out.println(p.toString());
+		//8 
+		PositivaPoint p = new PositivaPoint();
+		p.move(10 , 10 );
+		System.out.println(p.toString());
+		p.move(-5, 5 );
+		System.out.println(p.toString());
+		PositivaPoint p2  = new PositivaPoint(-10,-10 );
+		System.out.println(p2 .toString());
+		}
+
+}

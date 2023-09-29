@@ -1,0 +1,46 @@
+package chapter4;
+
+import java.util.Scanner;
+
+public class Testtrang247 {
+	public static void main(String[] args) {
+		String chonChoNgoi[][] = new String[3][10];
+	    Scanner sc = new Scanner(System.in);
+	    int luachon=0;
+	    do {
+	    	 System.out.println("명품콘서트 에약 시스텀이다.");
+	    	 System.out.print("예약:1 , 조회:2 , 취소:3 , 끝:4>>");
+	    	 luachon=sc.nextInt();
+	    	 if(luachon==1) {
+	    		 System.out.print("좌석구분 S(1) , A(2) , B(3) >> ");
+	    		 int hang = sc.nextInt();
+	    		 if(hang==1 | hang==2 | hang==3) {
+	    			 System.out.print("S>>>");
+	  	                for (int j = hang-1; j < chonChoNgoi[hang-1].length; j++) {
+	  	                    if (chonChoNgoi[0][j]==null) {
+	  	                        System.out.print("X ");
+	  	                    } else {
+	  	                        System.out.print("O ");
+	  	                    }
+	  	                }
+	  	                System.out.println();
+	  	              System.out.print("Name:");
+	  	              String name = sc.next();
+	  	              System.out.print("번호 :");
+	  	              int so = sc.nextInt();
+	  	            for (int j = 0; j < chonChoNgoi[0].length; j++) {
+	  	            	if(chonChoNgoi[0][so]==null)
+	  	            		chonChoNgoi[0][so]=name;
+	  	            	else
+	  	            		System.out.println("da co nguoi!");
+	  	            }
+	  	                
+	  	            }
+	    	 
+	    		
+	    	 }
+	    }while(luachon!=4);
+	    System.out.println("Trạng thái chỗ ngồi:");
+	    
+	}
+}

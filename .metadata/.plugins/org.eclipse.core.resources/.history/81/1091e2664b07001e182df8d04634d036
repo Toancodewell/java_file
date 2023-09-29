@@ -1,0 +1,28 @@
+package java316;
+
+public class PositivaPoint extends Point{
+	public  PositivaPoint() {
+		}
+	public  PositivaPoint(int x , int y)  {
+		super(0,0);
+	}
+	
+	public void move(int x , int y ) {
+		setX(x );
+		setY(y );
+	}
+	public void move(int  x , double  y ) {
+		 super.move(getX(), getY());	
+	}
+	@Override
+	public String toString() {
+		return "PositivaPoint [ getX()=" + getX() + ", getY()=" + getY() 
+				;
+	}
+
+//	@Override
+//	public String toString() {
+//		return "("+getX()+", "+getY()+")";
+//	}
+	
+}

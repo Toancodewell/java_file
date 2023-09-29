@@ -1,0 +1,12 @@
+package chapter4;
+
+import java.util.Scanner;
+
+public class Testtrang247 {
+	public static void main(String[] args) {
+		int sapxepcho[][] = new int[3][10];
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("Trạng thái chỗ ngồi:");
+	    
+	}
+}
